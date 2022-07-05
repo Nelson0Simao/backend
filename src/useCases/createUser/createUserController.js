@@ -4,7 +4,7 @@ import { CreateUserUseCase } from './CreateUserUseCase.js';
 export class createUserController{
     #createUserCase = new CreateUserUseCase();
 
-    async handle(request, response){
+    async validadeLogin(request, response){
      /*const { name, body, password } = Request.body;
     try {
         await this.#createUserCase.execute({
@@ -16,5 +16,11 @@ export class createUserController{
             message:error.message || "Unexpected error."
         })
     }*/
+    }
+    async createNewUser(request, response){
+
+    }
+    async listShopProdutos(request, response){
+
     }
 }

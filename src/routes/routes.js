@@ -4,14 +4,8 @@ import { createUserController } from "../useCases/createUser/createUserControlle
 const router = Router();
 const userController = new createUserController();
 
-router.get('/sign', userController.handle);
-
-router.get('/create-new-user', async function(req, res){
-    res.send("1")
-})
-router.get('/shop-list', async function(req, res){
-    res.send("1")
-    
-})
+router.get('/sign', await userController.validadeLogin);
+router.get('/create-new-user',  await userController.createNewUser)
+router.get('/shop-list', await userController.listShopProdutos)
 
 export { router }
