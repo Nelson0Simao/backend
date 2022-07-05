@@ -1,11 +1,11 @@
-import { Request, Response } from 'express';
-import { CreateUserUseCase } from './CreateUserUseCase';
+
+import { CreateUserUseCase } from './CreateUserUseCase.js';
 
 export class createUserController{
     #createUserCase = new CreateUserUseCase();
 
-    async handle( Request, Response){
-     const { name, body, password } = Request.body;
+    async handle(request, response){
+     /*const { name, body, password } = Request.body;
     try {
         await this.#createUserCase.execute({
             name, body, password
@@ -15,6 +15,6 @@ export class createUserController{
         return Response.status(400).json({
             message:error.message || "Unexpected error."
         })
-    }
+    }*/
     }
 }
