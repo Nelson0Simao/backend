@@ -5,17 +5,17 @@ export class createUserController{
     #createUserCase = new CreateUserUseCase();
 
     async validadeLogin(request, response){
-     /*const { name, body, password } = Request.body;
-    try {
-        await this.#createUserCase.execute({
-            name, body, password
-        })
-        return Response.status(201).send();
+
+     const { body } = response;
+    try { 
+        const createUserUseCase = new  CreateUserUseCase();
+        /*const result = createUserUseCase.execute(body);*/
+        console.log(body)
     } catch (error) {
         return Response.status(400).json({
             message:error.message || "Unexpected error."
         })
-    }*/
+    }
     }
     async createNewUser(request, response){
 

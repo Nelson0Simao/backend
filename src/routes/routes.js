@@ -4,7 +4,7 @@ import { createUserController } from "../useCases/createUser/createUserControlle
 const router = Router();
 const userController = new createUserController();
 
-router.get('/sign', await userController.validadeLogin);
+router.post('/sign', await userController.validadeLogin);
 router.get('/create-new-user',  await userController.createNewUser)
 router.get('/shop-list', await userController.listShopProdutos)
 
