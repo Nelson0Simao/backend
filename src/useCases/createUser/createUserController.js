@@ -4,11 +4,10 @@ export class createUserController{
     #createUserCase = new CreateUserUseCase();
 
     async totalShops(request, response){
-        response.send("Todos os produtos então em andamento")
+        response.send("Todos os produtos então em andamento");
     }
     async validadeLogin(request, response){
-     const { body } = request;
-     console.log(body)
+        response.send("1234")
     }
     async createNewUser(request, response){
 
