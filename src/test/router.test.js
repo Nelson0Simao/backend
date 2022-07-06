@@ -1,10 +1,7 @@
-import router from "../routes/routes";
-import axios from "axios";
+function sum(a, b) {
+    return a + b;
+  }
 
-//Teste de integração com o servidor ligado
-test('Should get posts', async function (){
-    {
-
-       // expect(ArryUser).toBe(ArryUser);
-    }
+test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3);
 });

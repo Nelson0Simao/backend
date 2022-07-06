@@ -1,7 +1,6 @@
-# cadastro do cliente
-    jwt
+# Tecnologias 
 
-# consume api de fotos e saber os detalhes
-    axios
+    nodejs
+    express
+    html, css, js
 
-# fazer teste em tudo

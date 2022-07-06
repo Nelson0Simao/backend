@@ -1,21 +1,14 @@
-
 import { CreateUserUseCase } from './CreateUserUseCase.js';
 
 export class createUserController{
     #createUserCase = new CreateUserUseCase();
 
-    async validadeLogin(request, response){
-
-     const { body } = response;
-    try { 
-        const createUserUseCase = new  CreateUserUseCase();
-        /*const result = createUserUseCase.execute(body);*/
-        console.log(body)
-    } catch (error) {
-        return Response.status(400).json({
-            message:error.message || "Unexpected error."
-        })
+    async totalShops(request, response){
+        response.send("Todos os produtos então em andamento")
     }
+    async validadeLogin(request, response){
+     const { body } = request;
+     console.log(body)
     }
     async createNewUser(request, response){
 
